@@ -71,28 +71,35 @@
         </nav>
 <!--********************************************* content of page*********************************************************************-->
                   <div class="container">
-                    <div class="row mt-5">
-                      <h1 class=" col wow bounceIn" style="text-align:center;color:#288CF0;">إضافة شاغر</h1>
-                    </div>
-                    <div class="row mt-5">
-                          <div class="col-sm-2 mt-5">
-                            <label  for="exampleInputPassword1">وصف الشاغر:</label>
-                          </div>
-                          <div class="col">
-                            <textarea  name="name" rows="6" cols="60" class="wow bounceInUp" maxlength="500" placeholder="الرجاء قم بوصف الشاغر فيما لا يتجاوز 500 حرف"></textarea>
-                          </div>
+                    <div class="row mt-5 ">
+                      <div class="col justify-content-center">
+                        <h1 class=" col wow bounceIn" style="text-align:center;color:#288CF0;">إضافة شاغر</h1>
                       </div>
+                    </div>
+                    <!--  وصف الشاغر-->
+                    <div class="row mt-5 ">
+                          <div class="col-xs-4 col-sm-2"></div>
+                          <div class="col-xs-1 col-sm-2 mt-5 text-center">
+                            <label  for="exampleInputPassword1" >وصف الشاغر:</label>
+                          </div>
+                          <div class="col-xs-1 col">
+                            <textarea  name="name" rows="6" cols="60" class="wow bounceInUp rounded" maxlength="500" placeholder="الرجاء قم بوصف الشاغر فيما لا يتجاوز 500 حرف"></textarea>
+                          </div>
+                          <div class="col-sm-2"></div>
+                      </div>
+                      <!--  مؤهلات الخريج-->
                       <div class="row mt-3">
-                        <div class="col-sm-2 mt-3">
-                          <label  for="exampleInputPassword1">مؤهلات الخريج:</label>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2 mt-3 text-center ">
+                          <label  for="exampleInputPassword1">المؤهلات العلمية المطلوبة:</label>
                         </div>
                         <div class="col">
                         <!--  Select multiple as dropdown  اختيار عدة اختيارات من القائمة-->
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                         <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
                         <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
-                        <form  class="wow bounceInUp" action="http://httpbin.org/post" method="post">
-                          <select style="width:440px;" data-placeholder="يمكنك إختيار أكتر من مؤهل " multiple class="chosen-select" name="test">
+                        <form  class="wow bounceInUp rounded" action="http://httpbin.org/post" method="post">
+                          <select style="width:435px;" data-placeholder="الرجاء الاختيار من القائمة ويمكنك اختيار أكثر من مؤهل ان وجد " multiple class="chosen-select rounded" name="test">
                             <option value=""></option>
                             <option>مصمم</option>
                             <option>مبرمج</option>
@@ -103,43 +110,26 @@
                             <option>Polar Bear</option>
                             <option>Spectacled Bear</option>
                           </select>
-                          <input style="width:60px;" type="submit">
                         </form>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-2">
-                      </div>
-                        <div class="col">
-                        <input type="checkbox" name="" value="">
-                        <label class="wow bounceInUp" for="">اخرى</label>
-                        <input style="width:460px" type="text" name="" value="" class="wow bounceInUp" placeholder="أدخل مؤهلاتك ان لم تكن موجودة في القائمة">
-                      </div>
-                    </div>
+                    <!--  متطلبات خاصة-->
                     <div class="row mt-3">
-                      <div class="col-sm-2 ">
+                      <div class="col-sm-2"></div>
+                      <div class="col-sm-2 text-center">
                         <label for="exampleInputPassword1">متطلبات خاصة:</label>
                       </div>
                       <div class="col">
-                        <input style="width:500px;" type="text" name="" value="" class="wow bounceInUp">
+                        <textarea  name="name" rows="6" cols="60" class="wow bounceInUp rounded" maxlength="500" placeholder="الرجاء قم بوصف الشاغر فيما لا يتجاوز 500 حرف"></textarea>
                       </div>
                     </div>
-                    <div class="row mt-3">
-                      <div class="col-sm-2 ">
-                      </div>
-                    <div class="col-sm-2 ">
-                    <label for="exampleFormControlFile1">قم بتحميل سيرتك الذاتية:</label>
-                  </div>
-                  <div class="col-sm-4 ">
-                <input type="file" class="form-control-file wow bounceInUp" id="exampleFormControlFile1">
-                  </div>
-                </div>
+                <!--  اضافة-->
                 <div class="row mt-5">
-                  <div class="col-sm-3 ">
+                  <div class="col-sm-4 ">
                     <label  for="exampleInputPassword1"></label>
                   </div>
-                  <div class="col-sm-5 ">
-                    <button style="width:500px;" type="submit" class="btn btn-primary col-sm-5 wow bounceIn" href="#" data-toggle="modal" data-target="#myModal">إضافة</button>
+                  <div class="col-sm-5 text-center">
+                    <button style="width:600px;" type="submit" class="btn btn-primary col-sm-7 wow bounceIn rounded" href="#" data-toggle="modal" data-target="#myModal">إضافة</button>
                   </div>
                 </div>
               </div>

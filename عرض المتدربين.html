@@ -1,7 +1,7 @@
 <!DOCTYPE html>
    <html>
    <head>
-       <title>عرض المتدربين</title><!-- site title-->
+       <title>الشواغر - خريج</title><!-- site title-->
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="shortcut icon" href="" type="image/x-icon" /><!-- fav icon -->
@@ -34,22 +34,20 @@
             </div>
           </div>
           <div style="text-align:center;margin-top:-83px;margin-right:70px ;">
-            <li><a href="https://xbootstrap.com">الصفحة الرئيسية</a></li>
-            <li><a href="https://xbootstrap.com">بيانات المشغل</a></li>
-            <li><a href="javascript:void(0)">شاغر<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
+            <li><a href="https://xbootstrap.com">بياناتي</a></li>
+            <li><a href="javascript:void(0)">شواغر<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
               <ul class="dropdown">
-                <li><a href="">عرض شواغر</a></li>
-                <li><a href="">إضافة شواغر</a></li>
-                <li><a href="">طلبات ع الشاغر</a></li>
+                <li><a href="">عرض الشواغر</a></li>
+                <li><a href="">شواغري</a></li>
               </ul>
             </li>
-            <li><a href="javascript:void(0)" >المتدربين<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
+            <li><a href="javascript:void(0)" >التدريب<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
               <ul class="dropdown">
                 <li><a href="https://xbootstrap.com">عرض المتدربين</a></li>
                 <li><a href="https://xbootstrap.com">تقييم المتدربين</a></li>
                   <li><a href="https://xbootstrap.com">تقييم البرنامج
                 </a></li>
-                <li><a href="https://xbootstrap.com">تقديم خطة تدريب</a></li>
+                <li><a href="https://xbootstrap.com">عرض خطة تدريب</a></li>
                   <li><a href="https://xbootstrap.com">ملف حضور المتدرب</a></li>
                 </ul>
                 </li>
@@ -71,10 +69,36 @@
         </nav>
 
         <!--********************************************* content of page*********************************************************************-->
+                  <!-- العنوان -->
                   <div class="container">
                     <div class="row mt-5">
                       <h1 class=" col wow bounceIn" style="text-align:center;color:#288CF0;">عرض المتدربين</h1>
                     </div>
+                    <!--  بداية محتوى الصفحة-->
+                    <div class="row">
+                      <div class="col-sm-1">
+                        <label for="">بحث عن </label>
+                      </div>
+                      <div class="col">
+                        <input style="width:400px;height:40px;" type="search" name="" value="" placeholder="الاسم">
+                      </div>
+                      <div class="col-sm-1">
+                        <label for="">فرز حسب </label>
+                      </div>
+                      <div class="col">
+                        <select class="col wow bounceInUp rounded" style="height:40px;width:200px">
+                            <option selected>المسمى الوظيفي </option>
+                            <option value="1">مصمم</option>
+                            <option value="2">مبرمج</option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                       </select>
+                      </div>
+                      <div class="col">
+                        <button style="width:150px;height:40px;" type="submit" class="btn btn-info wow bounceInUp ">بحث</button>
+                      </div>
+                    </div>
+                    <!-- بداية الجدول -->
                     <div class="row mt-5">
                       <table  class="table table-bordered wow bounceIn" >
                         <thead >

@@ -96,7 +96,7 @@
                     <div class="form-group">
                       <div class="row">
                         <label class=" control-label col-sm-2" for="email"> اسم المشغل: </label>
-                        <input class="col-sm-6 wow bounceInUp" type="text" class="form-control" id="email" placeholder="" name="first_name" value="" required></input>
+                        <input class="col-sm-6 wow bounceInUp" type="text" class="form-control" id="email" placeholder="أدخل اسم المشغل" name="first_name" value="" required></input>
                      </div>
                     </div>
                     <!--نوع المشغل  -->
@@ -105,27 +105,27 @@
                         <label class=" control-label col-sm-2" for="email">نوع المشغل: </label>
                         <!-- <input class="col-sm-6" type="text" class="form-control" id="email" placeholder="" name="first_name" value="" ></input> -->
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input wow bounceInUp" type="radio" id="inlineCheckbox1" value="option1" required>
+                          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                           <label class="form-check-label" for="inlineCheckbox1">شركة </label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input wow bounceInUp" type="radio" id="inlineCheckbox2" value="option2" required>
+                          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                           <label class="form-check-label" for="inlineCheckbox2">مصنع </label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input wow bounceInUp" type="radio" id="inlineCheckbox3" value="option3" required>
+                          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                           <label class="form-check-label" for="inlineCheckbox3">ورشة </label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input wow bounceInUp" type="radio" id="inlineCheckbox2" value="option2" required>
+                          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                           <label class="form-check-label" for="inlineCheckbox2">مؤسسة أهلية</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input wow bounceInUp" type="radio" id="inlineCheckbox2" value="option2" required>
+                          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                           <label class="form-check-label" for="inlineCheckbox2">مدرسة</label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input wow bounceInUp" type="radio" id="inlineCheckbox2" value="option2" required>
+                          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                           <label class="form-check-label" for="inlineCheckbox2">روضة </label>
                         </div>
                       </div>
@@ -134,15 +134,15 @@
                        <div class="row">
                            <label class=" control-label col-sm-2" for="email"></label>
                            <div class="form-check form-check-inline">
-                             <input class="form-check-input  wow bounceInUp" type="radio" id="inlineCheckbox2" value="option2" required>
+                             <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                              <label class="form-check-label " for="inlineCheckbox2">مطعم /فندق</label>
                            </div>
                            <div class="form-check form-check-inline">
-                             <input class="form-check-input  wow bounceInUp" type="radio" id="inlineCheckbox2" value="option2" required>
+                             <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
                              <label class="form-check-label" for="inlineCheckbox2">بنك </label>
                            </div>
                            <div class="form-check form-check-inline">
-                             <input class="form-check-input form  wow bounceInUp" type="radio" id="inlineCheckbox2" value="option2" required>
+                             <input class="form-check-input form  wow bounceInUp" type="radio" name="contact" value="email" id="inlineCheckbox2" value="option2" required>
                              <label class="form-check-label " for="inlineCheckbox2" >أخرى</label>
                              <input style="width:313px;display:none;" id="div11"  class="form-check " type="text"  value="">
                            </div>
@@ -165,7 +165,7 @@
                               <option value="8">تجارة وبيع بالتجزئة</option>
                               <option value="9">خدمات استشارية (إدارية وتسويقية ومالية)</option>
                          </select>
-                         <input class="col-sm-1 oo" type="checkbox" name="" value="" >
+                         <input class="col-sm-1 oo dd" type="checkbox" name="" value="" >
                          <label  for="">أخرى</label>
                        </div>
                       </div>
@@ -173,6 +173,12 @@
                         <div class="row">
                           <label class=" control-label col-sm-2 wow bounceInUp" for="email"></label>
                            <input type="text" name="" value="" style="width:600px;display:none;"  id="div33" placeholder="الرجاء أدخل مجال العمل المشغل" required>
+                         </div>
+                         <div class="row mt-2">
+                           <div class="col-sm-2">
+                           </div>
+                           <textarea style="display:none;" class="col-sm-6" name=" " id="div2" placeholder="الرجاء وصف مجال وطبيعة العمل بشكل أوضح" rows="8" cols="80"></textarea>
+
                         </div>
                        </div>
                          <div class="form-group">
@@ -187,25 +193,28 @@
                         <div class="row">
                           <label class=" control-label col-sm-2" for="email">عدد الموظفين : </label>
                           <label class=" control-label col-sm-1" for="email">دوام جزئي </label>
-                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="" name="first_name" value="" required></input>
+                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="العدد" name="first_name" value="" required></input>
                           <label class=" control-label col-sm-1" for="email">دوام كلي </label>
-                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="" name="first_name" value="" required></input>
+                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="العدد" name="first_name" value="" required></input>
                        </div>
+
                       </div>
                       <div class="form-group ">
                         <div class="row">
-                          <label class=" control-label col-sm-2" for="email"> </label>
-                          <label  class=" control-label col-sm-1" for="email">موظفين   ذكور</label>
-                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="" name="first_name" value="" required></input>
-                          <label  class=" control-label col-sm-1" for="email">موظفين إناث </label>
-                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="" name="first_name" value="" required></input>
-                        </div>
+                          <label class=" control-label col-sm-2" for="email">عدد الموظفين : </label>
+                          <label class=" control-label col-sm-1" for="email">ذكور </label>
+                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="العدد" name="first_name" value="" required></input>
+                          <label class=" control-label col-sm-1" for="email">إناث</label>
+                          <input class="col-sm-2 wow bounceInUp" type="number" class="form-control" id="email" placeholder="العدد" name="first_name" value="" required></input>
+                       </div>
+
                        </div>
                       <!--رقم الترخيص-->
                       <div class="form-group mt-5">
                         <div class="row">
                           <label class=" control-label col-sm-2" for="email">رقم الترخيص: </label>
-                          <input class="col-sm-6 wow bounceInUp" type="text" class="form-control" id="email" placeholder="" name="first_name" value="" required></input>
+                          <input class="col-sm-6 wow bounceInUp" type="text" class="form-control" id="email" placeholder="أدخل رقم الترخيص" name="first_name" value="" required></input>
+
                        </div>
                       </div>
                       <!--تاريخ التأسيس-->
@@ -221,7 +230,7 @@
                           <div class="col-sm-2 ">
                           </div>
                         <div class="col-sm-2 ">
-                        <label for="exampleFormControlFile1">قم بتحميل سيرتك الذاتية:</label>
+                        <label for="exampleFormControlFile1">قم بتحميل السيرة الذاتية للمشغل:</label>
                       </div>
                       <div class="col-sm-4 ">
                     <input type="file" class="form-control-file wow bounceInUp" id="exampleFormControlFile1">

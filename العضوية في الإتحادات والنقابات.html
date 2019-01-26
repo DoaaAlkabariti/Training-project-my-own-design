@@ -73,51 +73,52 @@
           <div class="container">
             <!--  عنوان الصفحة-->
             <div class="row mt-5">
-              <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">العضوية في الإتحادات والنقابات</h1>
+              <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">العضوية في الإتحادات والنقابات والشبكات المنضمة إلبها</h1>
             </div>
           <!--  بداية محتوى الصفحة-->
           <!--  السطر الأول -->
           <form class="needs-validation" novalidate>
-            <div class="row mt-5">
+            <div class="row mt-5 justify-content-center">
               <div class="col-1">
                 <label class=" control-label "for="validationServerUsername">اسم الجهة : </label>
               </div>
-              <div class="col">
+              <!-- <div class="col"> -->
                 <!--  Select multiple as dropdown  اختيار عدة اختيارات من القائمة-->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
-                <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
-                <form  action="http://httpbin.org/post" method="post">
-                  <select style="width:400px;" data-placeholder="يمكنك اختيار أكثر من جهة " multiple class="chosen-select" name="test">
-                    <option value=""></option>
-                    <option>American Black Bear</option>
-                    <option>Asiatic Black Bear</option>
-                    <option>Brown Bear</option>
-                    <option>Giant Panda</option>
-                    <option>Sloth Bear</option>
-                    <option>Sun Bear</option>
-                    <option>Polar Bear</option>
-                    <option>Spectacled Bear</option>
-                  </select>
-                  <input style="width:60px;" type="submit">
+                <form  action="/action_page.php">
+                <input style="width:500px;" list="browsers" name="browser" placeholder="قم بإضافة اسم الجهة خاصتك ان لم تجدها في القائمة">
+                <datalist id="browsers">
+                  <option value="Internet Explorer">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
                 </form>
               </div>
-              <div class="col-1">
-                <label class=" control-label " for="validationServerUsername">رقم العضوية: </label>
+              <div class="row justify-content-center mt-5">
+
+                 <div class="col-1">
+                  <label class=" control-label " for="validationServerUsername">رقم العضوية: </label>
+                </div>
+                <div class="col-2">
+                  <input  type="text" class="form-control  wow bounceInUp required" id="validationServerUsername"  placeholder="" name="first_name" value="" ></input>
+                </div>
+                <div class="col-1">
+                 <label class=" control-label " for="validationServerUsername">سنة العضوية: </label>
+               </div>
+               <div class="col-1">
+                 <input  type="number" class="form-control  wow bounceInUp required" id="validationServerUsername"  placeholder="" name="first_name" value="" ></input>
+               </div>
+               <div class="col-2">
+                 <label for="exampleFormControlFile1">مرفقات العضوية إن وجد:</label>
+               </div>
+               <div class="col-2">
+                 <input type="file" class="form-control-file wow bounceInUp" id="exampleFormControlFile1">
+               </div>
+               <div class="col-2">
+                 <input style="width:150px;height:45px;background:#FFEB3B;border-radius:20px;" class="wow bounceIn" type="submit" id="email" placeholder="" name="first_name" value="إضافة" ></input>
+               </div>
               </div>
-              <div class="col-1">
-                <input  type="number" class="form-control  wow bounceInUp required" id="validationServerUsername"  placeholder="" name="first_name" value="" ></input>
-              </div>
-              <div class="col-1">
-                <label class=" control-label " for="validationServerUsername">سنة العضوية:</label>
-              </div>
-              <div class="col-1">
-                <input  type="text" class="form-control wow bounceInUp required" id="validationServerUsername"  placeholder="" name="first_name" value="" ></input>
-              </div>
-              <div class="col-2">
-                <input style="width:150px;height:45px;background:#FFEB3B;border-radius:20px;" class="wow bounceIn" type="submit" id="email" placeholder="" name="first_name" value="إضافة" ></input>
-              </div>
-            </div>
          </form>
          <!--  الجدول-->
          <div class="row mt-5" >
@@ -128,6 +129,8 @@
                 <th scope="col">اسم الجهة</th>
                 <th scope="col">رقم العضوية</th>
                 <th scope="col">سنة العضوية</th>
+                <th scope="col">مرفق</th>
+                <th scope="col">عمليات</th>
               </tr>
             </thead>
             <tbody>
@@ -136,29 +139,60 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td>
+                <button  type="button" class="btn btn-info wow bounceInUp">تعديل </button>
+                <button  type="button" class="btn btn-danger wow bounceInUp">حذف  </button>
+              </td>
               </tr>
               <tr>
                 <th scope="row" class="table-info">2</th>
                 <td class="table-info"></td>
                 <td class="table-info"></td>
                 <td class="table-info"></td>
+                <td class="table-info"></td>
+                <td class="table-info">
+                  <button  type="button" class="btn btn-info wow bounceInUp">تعديل </button>
+                  <button  type="button" class="btn btn-danger wow bounceInUp">حذف  </button>
+                </td>
+
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td>
+                  <button  type="button" class="btn btn-info wow bounceInUp">تعديل </button>
+                  <button  type="button" class="btn btn-danger wow bounceInUp">حذف  </button>
+                </td>
               </tr>
               <tr>
                 <th scope="row" class="table-info">4</th>
                 <td class="table-info"></td>
                 <td class="table-info"></td>
                 <td class="table-info"></td>
+                <td class="table-info"></td>
+                <td class="table-info">
+                  <button  type="button" class="btn btn-info wow bounceInUp">تعديل </button>
+                  <button  type="button" class="btn btn-danger wow bounceInUp">حذف  </button>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
-    </div>
+        <!--  زر الطباعة-->
+          <div class="row mt-5">
+             <div class="col-xs-6 col-sm-8  "></div>
+             <div class="col-xs-6 col-sm-2  ">
+               <button style="width:190px;" type="submit" class="btn btn-info wow bounceInUp ">طباعة</button>
+             </div>
+             <div class="col-xs-4 col-sm-2 " >
+               <button style="width:190px;" type="submit" class="btn btn-info wow bounceInUp ">تأكيد الطلب</button>
+             </div>
+           </div>
+          </div>
 <!--**********************************************************************************************************************-->
     <img style="margin-top:13px;margin-left:-1px;margin-bottom:-20px;" src="lib/img/a2.svg" alt="">
 <!--****************************************************** start footer **************************************************-->

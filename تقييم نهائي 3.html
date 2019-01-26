@@ -80,12 +80,12 @@
           </div>
         </nav>
 <!--***********************************************************************************************************************-->
-      <div class="container">
+      <div class="container " >
         <!--  عنوان الصفحة-->
         <div class="row mt-5">
         </div>
         <div class="row mt-5">
-          <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">عرض تقييم نهائي</h1>
+          <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">تقييم البرنامج</h1>
         </div>
       <!--  بداية محتوى الصفحة-->
       <div class="row mt-5">
@@ -139,182 +139,324 @@
       <div class="row mt-5 mb-3">
         <h3 style="color:#288CF0;">أ.معلومات حول أداء المتدرب:</h3>
       </div>
-      <!--  عدد الخريجين-->
+      <!--  1 عدد الخريجين-->
       <div class="row">
           <p>1.كم عدد الخريجين اذين تلقوا تدريبهم في مؤسستك/شركتك؟</p>
         </div>
         <div class="row">
           <div class="col-sm-3">
-            <input type="text" name="" value="">
+            <input type="number" name="" value="">
             <label for="">ذكر</label>
           </div>
           <div class="col-sm-3">
-          <input type="text" name="" value="">
+          <input type="number" name="" value="">
           <label for="">أنثى</label>
         </div>
       </div>
-      <!--  التزام الخريج-->
+      <!-- 2  التزام الخريج-->
       <hr>
       <div class="row mt-3">
-          <p>2.كيف تقيم التزام الخريج/ين في المهام الموكلة لهم طول فترة التدريب؟</p>
+          <p>2.كيف تقيم إلتزام الخريج/ين في الدوام طوال فترة التدريب؟</p>
         </div>
         <div class="row">
           <div class="col-sm-2">
-          <input type="radio" name="" value="">
-          <label for="">ملتزم بشكل كبير</label>
+            <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad1"  required>
+          <label for="" >ملتزم بشكل كبير</label>
         </div>
         <div class="col-sm-2">
-          <input type="radio" name="" value="">
+          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad1"  required>
           <label for="">ملتزم بشكل متوسط</label>
         </div>
         <div class="col-sm-2">
-          <input type="radio" name="" value="">
+          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad1"  required>
           <label for="">غير ملتزم</label>
         </div>
       </div>
-      <div class="row">
+      <div class="row d1" style="display:none;">
         <div class="col-sm-1">
         <span>وضح:</span>
         </div>
         <div class="col-sm-7">
-        <input style="width:500px;" type="text" name="" value="">
+        <input style="width:600px;" type="text" name="" value="">
         </div>
       </div>
       <hr>
-      <!--  التزام الخريج 2-->
+      <!--3التزام الخريج -->
       <div class="row mt-3">
-          <p>3.كيف تقيم إلتزام الخريج/ين في المهام الموكلة لهم طول فترة البرنامج؟</p>
+          <p>3.كيف تقيم التزام الخريج/ين في المهام الموكلة لهم طوال فترة التدريب؟</p>
         </div>
         <div class="row">
           <div class="col-sm-2">
-          <input type="radio" name="" value="">
+            <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad2"  required>
           <label for="">ملتزم بشكل كبير</label>
         </div>
         <div class="col-sm-2">
-          <input type="radio" name="" value="">
+          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad2"  required>
           <label for="">ملتزم بشكل متوسط</label>
         </div>
         <div class="col-sm-2">
-          <input type="radio" name="" value="">
+          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad2"  required>
           <label for="">غير ملتزم</label>
         </div>
       </div>
-      <div class="row">
+      <div class="row d2"  style="display:none;" >
         <div class="col-sm-1">
         <span>وضح:</span>
         </div>
         <div class="col-sm-7">
-        <input style="width:500px;" type="text" name="" value="">
+        <input style="width:600px;" type="text" name="" value="">
         </div>
       </div>
       <hr>
-      <!--  وجود خطة تدريبية-->
+      <!--  4 وجود خطة تدريبية-->
       <div class="row mt-3">
-          <p>3.كيف تقيم إلتزام الخريج/ين في المهام الموكلة لهم طول فترة البرنامج؟</p>
+          <p>4.من وجهة نظرك هل تعتبر وجود خطة تدريبية للخريج تساهم في تعزيز قدراته؟</p>
         </div>
         <div class="row">
           <div class="col-sm-3">
-          <input type="radio" name="" value="">
-          <label for="">نعم</label>
-        </div>
-        <div class="col-sm-3">
-          <input type="radio" name="" value="">
-          <label for="">لا</label>
-        </div>
+             <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad3"  required>
+             <label for="contactChoice1" style="margin-left:20px;">نعم </label>
+           </div>
+           <div class="col-sm-3">
+             <input type="radio" id="contactChoice2"name="contact" value="phone" class="wow bounceInUp no1" >
+             <label for="contactChoice2" style="margin-left:20px;">لا</label>
+         </div>
       </div>
-      <div class="row mt-2">
+      <div class="row mt-2 d3" style="display:none;">
         <div class="col-sm-2">
         <span>اذا كانت الإجابة نعم ما السبب:</span>
         </div>
         <div class="col-sm-7">
-        <input style="width:400px;" type="text" name="" value="">
+        <input style="width:500px;" type="text" name="" value="">
         </div>
       </div>
-      <div class="row mt-2">
-        <div class="col-sm-2">
-        <span>كم عددالجلسات الكافي من وجهة نظرك:</span>
-        </div>
-        <div class="col-sm-7">
-        <input style="width:400px;" type="text" name="" value="">
-        </div>
-      </div>
-      <div class="row mt-2">
+      <div class="row mt-2 d3" style="display:none;">
         <div class="col-sm-2">
         <span>ماهي توصياتك بهذا الخصوص:</span>
         </div>
         <div class="col-sm-7">
-        <input style="width:400px;" type="text" name="" value="">
+        <input style="width:500px;" type="text" name="" value="">
         </div>
       </div>
       <hr>
-      <!--  جلسات الارشاد المدني-->
-      <div class="row">
-        <div class="col">
-          <p>1.كم عدد الخريجين اذين تلقوا تدريبهم في مؤسستك/شركتك؟</p>
-          <input type="text" name="" value="">
-          <label for="">ذكر</label>
-          <input type="text" name="" value="">
-          <label for="">أنثى</label>
+      <!--  5 جلسات ارشاد -->
+      <div class="row mt-3">
+          <p>5.هل شكلت جلسات الإرشاد المهني وتردد المرشد المهني على موقع العمل عدة مرات خلال فترة التدريب أي عائق بالنسبة لك؟</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+             <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad4"  required>
+             <label for="contactChoice1" style="margin-left:20px;">نعم </label>
+           </div>
+           <div class="col-sm-3">
+             <input type="radio" id="contactChoice2"name="contact" value="phone" class="wow bounceInUp no2" >
+             <label for="contactChoice2" style="margin-left:20px;">لا</label>
+         </div>
+      </div>
+      <div class="row mt-2 d4" style="display:none;">
+        <div class="col-sm-2">
+        <span>اذا كانت الإجابة نعم ما السبب:</span>
+        </div>
+        <div class="col-sm-7">
+        <input style="width:500px;" type="text" name="" value="">
         </div>
       </div>
-      <!--  ربط الخريجين بسوق العمل-->
-      <div class="row">
-        <div class="col">
-          <p></p>
-          <input type="text" name="" value="">
-          <label for="">ذكر</label>
-          <input type="text" name="" value="">
-          <label for="">أنثى</label>
+      <div class="row mt-2 d4" style="display:none;">
+        <div class="col-sm-2">
+        <span>كم عددالجلسات الكافي من وجهة نظرك:</span>
+        </div>
+        <div class="col-sm-7">
+        <input style="width:500px;" type="text" name="" value="">
         </div>
       </div>
-      <!--  الرضى عن فرصة التدريب-->
-      <div class="row">
-        <div class="col">
-          <p>5.أي إضافات أخرى تود ذكرها</p>
-          <input type="text" name="" value="">
-          <label for="">ذكر</label>
-          <input type="text" name="" value="">
-          <label for="">أنثى</label>
+      <div class="row mt-2 d4" style="display:none;">
+        <div class="col-sm-2">
+        <span>ماهي توصياتك بهذا الخصوص:</span>
+        </div>
+        <div class="col-sm-7">
+        <input style="width:500px;" type="text" name="" value="">
         </div>
       </div>
-  <!--******************************************************************************************************************  -->
+      <hr>
+      <!--  ربط الخريجين 6-->
+      <div class="row mt-3">
+          <p>6.من وجهة نظرك هل تجد أن مثل هذه الفرص تساعد في ربط الخريجين بسوق العمل؟</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+             <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad5"  required>
+             <label for="contactChoice1" style="margin-left:20px;">نعم </label>
+           </div>
+           <div class="col-sm-3">
+             <input type="radio" id="contactChoice2"name="contact" value="phone" class="wow bounceInUp no3" >
+             <label for="contactChoice2" style="margin-left:20px;">لا</label>
+         </div>
+      </div>
+      <div class="row mt-2 d5" style="display:none;">
+        <div class="col-sm-2">
+        <span>اذا كانت الإجابة نعم ما السبب:</span>
+        </div>
+        <div class="col-sm-7">
+        <input style="width:500px;" type="text" name="" value="">
+        </div>
+      </div>
+      <div class="row mt-2 d5" style="display:none;">
+        <div class="col-sm-2">
+        <span>ماهي توصياتك بهذا الخصوص:</span>
+        </div>
+        <div class="col-sm-7">
+        <input style="width:500px;" type="text" name="" value="">
+        </div>
+      </div>
+      <hr>
+      <!-- مدى الرضى 7-->
+      <div class="row mt-3">
+          <p>7. ما هو مدى رضاك عن فرصة التدريب ودورها في تعزيز مهارات الخريجين الجدد؟</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad6"  required>
+          <label for="">مرضية جدا</label>
+        </div>
+        <div class="col-sm-1">
+          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad6"  required>
+          <label for="">مرضية</label>
+        </div>
+        <div class="col-sm-2">
+          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad6"  required>
+          <label for="">غير مرضية</label>
+        </div>
+        <div class="col-sm-2">
+          <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad6"  required>
+          <label for="">بحاجة لتفيير</label>
+        </div>
+      </div>
+      <div class="row d6" style="display:none;">
+        <div class="col-sm-1">
+        <span>وضح:</span>
+        </div>
+        <div class="col-sm-7">
+        <input style="width:600px;" type="text" name="" value="">
+        </div>
+      </div>
+
+
+  <!--********************************************** بنود اضافية ********************************************************************  -->
     <hr style="background:black;">
       <div class="row mt-5 mb-3">
         <h3 style="color:#288CF0;">ب.بنود إضافية</h3>
       </div>
-      <!--  الاستمرار في التدريب-->
-      <div class="row">
-        <div class="col">
-          <p>1.كم عدد الخريجين اذين تلقوا تدريبهم في مؤسستك/شركتك؟</p>
-          <input type="text" name="" value="">
-          <label for="">ذكر</label>
-          <input type="text" name="" value="">
-          <label for="">أنثى</label>
+      <!-- 1 الاستمرار في التدريب-->
+      <div class="row mt-3">
+          <p>4.من وجهة نظرك هل تعتبر وجود خطة تدريبية للخريج تساهم في تعزيز قدراته؟</p>
         </div>
+        <div class="row">
+          <div class="col-sm-3">
+             <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp rad7"  required>
+             <label for="contactChoice1" style="margin-left:20px;">نعم </label>
+           </div>
+           <div class="col-sm-3">
+             <input type="radio" id="contactChoice2"name="contact" value="phone" class="wow bounceInUp no4" >
+             <label for="contactChoice2" style="margin-left:20px;">لا</label>
+         </div>
       </div>
+    <div class="row mt-3 d7" style="display:none;">
+      <table  class="table table-bordered wow bounceIn" >
+        <thead >
+          <tr style="background:#288CF0;color:white;">
+             <th style="text-align: center;">#</th>
+             <th style="text-align: center;">اذا كانت الاجابة نعم  </th>
+             <th style="text-align: center;">اختر </th>
+          </tr>
+       </thead>
+       <tbody>
+        <tr style="background-color:white">
+            <th scope="row">1</th>
+            <td ><p>هل سوف يستمر في نفس مجال فرصة التدريب؟</p></td>
+            <td style="text-align: center;">
+              <div>
+                 <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                 <label for="contactChoice1" style="margin-left:20px;">نعم</label>
+                 <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                 <label for="contactChoice1" style="margin-left:20px;">لا </label>
+             </div>
+            </td>
+         </tr>
+           <th scope="row" class="table-info">2</th>
+           <td class="table-info"><p>ماهو نوع فرصة العمل؟</p></td>
+           <td class="table-info" style="text-align: center;">
+              <div>
+                 <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                 <label for="contactChoice1" style="margin-left:20px;">دائمة </label>
+                 <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                 <label for="contactChoice1" style="margin-left:20px;">مؤقتة </label>
+             </div>
+           </td>
+         </tr>
+         </tr>
+         <tr  style="background-color:white">
+           <th scope="row">3</th>
+           <td ><p>ماهو نوع التعاقد؟</p></td>
+           <td style="text-align: center;">
+             <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                <label for="contactChoice1" style="margin-left:20px;">عقد بدوام كامل</label>
+                <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                <label for="contactChoice1" style="margin-left:20px;">عقد بدوام جزئي </label>
+            </div>
+           </td>
+
+           </tr>
+           <tr>
+             <th scope="row" class="table-info">4</th>
+             <td class="table-info"><p>هل الفرصة مدفوعة الأجر؟ </p></td>
+             <td class="table-info" style="text-align: center;">
+                <div>
+                   <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                   <label for="contactChoice1" style="margin-left:20px;">نعم</label>
+                   <input type="radio" id="contactChoice1" name="contact" value="email" class="wow bounceInUp"  required>
+                   <label for="contactChoice1" style="margin-left:20px;">لا </label>
+               </div>
+             </td>
+           </tr>
+            </tbody>
+           </table>
+
+         </div>
+      <hr>
+      <!--  الصفات الشخصية 2-->
       <div class="row">
         <div class="col">
           <p>2.يرجى تحديد الصفات الشخصية والمهارات والمعارف التي جعلت المتدرب متميزا بعمله خلال فترة التدريب</p>
-          <textarea name="name" rows="4" cols="80"></textarea>
+          <textarea name="name" rows="4" cols="100"></textarea>
         </div>
       </div>
       <div class="row">
         <div class="col">
           <p>3.من وجهة نظرك , ماهي المجالات التي يجب تحسينها من اجل ضمان مستقبل مهني ناجح للمتدرب؟</p>
-          <textarea name="name" rows="4" cols="80"></textarea>
+          <textarea name="name" rows="4" cols="100"></textarea>
         </div>
       </div>
       <div class="row">
         <div class="col">
           <p>4.أي اقتراحات حول التدريب الذي  تلقاه المتدرب وحول برنامج التدريب على رأس العمل بشكل عام:</p>
-          <textarea name="name" rows="4" cols="80"></textarea>
+          <textarea name="name" rows="4" cols="100"></textarea>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <p>5.أي إضافات أخرى تود ذكرها</p>
-          <textarea name="name" rows="4" cols="80"></textarea>
+          <p>5.أي إضافات أخرى تود ذكرها:</p>
+          <textarea name="name" rows="4" cols="100"></textarea>
         </div>
+      </div>
+      <!--  تعليق الادراة-->
+      <div class="row mt-5 mb-5">
+       <div class="col-sm-2">
+         <label style="color:red;font-size:25px;" for="">تعليق الادارة </label>
+       </div>
+       <div class="col-sm-3">
+         <label for="">هنا سيضاف نص يحتوي على تعليق الادارة</label>
+       </div>
       </div>
       <!--  زر الطباعة-->
         <div class="row mt-5 ">

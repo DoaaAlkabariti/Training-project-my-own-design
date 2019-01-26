@@ -1,7 +1,7 @@
 <!DOCTYPE html>
    <html>
    <head>
-       <title>شكاوي وافتراحات</title><!-- site title-->
+       <title>تقديم اقتراحات أو شكاوي</title><!-- site title-->
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="shortcut icon" href="" type="image/x-icon" /><!-- fav icon -->
@@ -74,11 +74,10 @@
     <div class="container">
       <!--  عنوان الصفحة-->
       <div class="row mt-5">
-        <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">اقتراحات وشكاوي</h1>
+        <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">تقديم  شكاوي أو اقتراحات</h1>
       </div>
       <div class="row mt-3">
-          <p class="col wow bounceIn" style="text-align:center;">أهلا وسهلا بك , في هذا المكان يمكنك تحديث بياناتك الشخصية حتى تستطيع الإستفادة من جميع الخدمات التي يتم تقديمها من خلال الموقع</p>
-      </div>
+        <p class="col wow bounceIn" style="text-align:center;">أهلا وسهلا بك , يمكنك تقديم شكوى أو استفسار أو اقتراح للاستادة من المشاريع المقدمة خلال الموقع</p>      </div>
      <div class="row" >
       <!-- first col -->
         <form style="width:500px;margin-top:50px" method="POST" class="form-horizontal" action="">
@@ -95,12 +94,19 @@
      <!--اسم المشغل -->
      <div class="form-group">
         <div class="row">
-          <label class=" control-label col-sm-2" for="email">اسم البرنامج: </label>
-          <input required class="col-sm-5 wow bounceInUp" type="text" class="form-control" id="email" placeholder="الرجاء إدخال اسم البرنامج" name="first_name" value="" ></input>
+          <label class=" control-label col-sm-2" for="email">عنوان الموضوع: </label>
+          <input required class="col-sm-5 wow bounceInUp rounded" type="text" class="form-control" id="email" placeholder="الرجاءإدخال عنوان الموضوع" name="first_name" value="" required ></input>
        </div>
      </div>
-     <!--نوع المشغل  -->
-      <div class="form-group mt-5">
+     <div class="form-group">
+        <div class="row mt-5">
+          <label class=" control-label col-sm-2" for="email"> </label>
+          <label class=" control-label col-sm-5" for="email">الرجاء اختيار إحدى الخيارات التالية حتى تتمكن من إرسال طلبك  </label>
+       </div>
+     </div>
+     <!--نوع الطلب -->
+      <div class="form-group ">
+
         <div class="row">
           <label class=" control-label col-sm-2" for="email">نوع الطلب: </label>
           <div>
@@ -118,7 +124,7 @@
           <div class="row">
             <label class=" control-label col-sm-2" for="email"> التفاصيلل:</label>
           <div class="col-sm-5  ">
-            <textarea class="wow bounceInUp" maxlength="500" name="name" rows="8" cols="58" placeholder="الرجاء شرح طلبك فيما لايتجاوز 500 حرف " required></textarea>
+            <textarea class="wow bounceInUp rounded" maxlength="500" name="name" rows="8" cols="58" placeholder="الرجاء شرح طلبك فيما لايتجاوز 500 حرف " required></textarea>
           </div>
         </div>
       </div>

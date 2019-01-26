@@ -98,6 +98,9 @@ nav{
 .btn-primary{
   background: #5791ef;
 }
+.dropdown{
+  z-index: 1000;
+}
 /**************************************   properities of main section (الصفحة الرئيسية )  **************************/
 .d-block{
   box-shadow: inset 0px 0px 10px #128CD6;

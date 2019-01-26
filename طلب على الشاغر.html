@@ -28,12 +28,12 @@
             <div class="media ">
               <img src="lib/img/Group%20124.svg"style="width:60px;" class="align-self-center mr-3 " alt="...">
               <div class="media-body">
-                <h5 class="mt-4" style="font-size:18px;color:white;margin-top:20px;" >مركز العمل التنموي معا</h5>
-                <p style="color:#FFEB3B">تدريب خريجين على رأس العمل</p>
+                <h5 class="mt-4" style="font-size:15px;color:white;margin-top:20px;" >مركز العمل التنموي معا</h5>
+                <p style="color:#FFEB3B;font-size:13px;">تدريب خريجين على رأس العمل</p>
               </div>
             </div>
           </div>
-          <div style="text-align:center;margin-top:-83px;margin-right:70px ;">
+          <div style="text-align:center;margin-top:-83px;margin-right:270px ;">
             <li><a href="https://xbootstrap.com">الصفحة الرئيسية</a></li>
             <li><a href="javascript:void(0)">المشغل<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
               <ul class="dropdown">
@@ -50,11 +50,10 @@
             </li>
             <li><a href="javascript:void(0)" >المتدربين<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
               <ul class="dropdown">
-                <li><a href="https://xbootstrap.com">عرض</a></li>
-                <li><a href="https://xbootstrap.com">تقييم شهري</a></li>
-                  <li><a href="https://xbootstrap.com">تقييم نهائي</a></li>
-                <li><a href="https://xbootstrap.com">طلب تدريب إضافي</a></li>
-                  <li><a href="https://xbootstrap.com">ملف حضور المتدرب</a></li>
+                <li><a href="">عرض</a></li>
+                <li><a href="">التقييمات</a></li>
+                <li><a href="">طلب تدريب إضافي</a></li>
+                <li><a href="">برنامج حضور المتدربين</a></li>
                 </ul>
                 </li>
                 <li><a href="javascript:void(0)" >أنشطة<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
@@ -69,8 +68,30 @@
                     <li><a href="https://xbootstrap.com">عرض</a></li>
                     </ul>
                     </li>
-                    <li><button type="button" class="btn btn-primary">الإشعارات<span class="badge badge-light">4</span></button></li>
-                    <li ><label style="border-radius:20px;margin-left:-270px;width:150px;border:3px solid #FFEB3B;padding:10px;font-size:25px;color:#FFEB3B;">المدير</label></li>
+                    <li ><button  type="button" class="btn btn-primary  ml-3" style="background:#FFEB3B;color:black;">الإشعارات<span class="badge ">4</span></button></li>
+                    <li class="dropdown dropdown-user mr-5">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                        <span class="username username-hide-on-mobile " style="border-radius:20px;width:150px;border:3px solid #FFEB3B;padding:12px;font-size:25px;color:#FFEB3B;">المدير</span>
+                    </a>
+                    <ul class="dropdown">
+                      <li>
+                        <a href="/account/home/change-password">
+                        <i class="icon-lock"></i> تغيير كلمة المرور </a>
+                      </li>
+                      <li>
+                        <a href="/account/account/profile/10">
+                          <i class="icon-lock"></i> تعديل بياناتك </a>
+                      </li>
+                        <li>
+                          <a class="dropdown-item" href="https://maancomplaint.com/logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                <i class="icon-key"></i>
+                                تسجيل خروج
+                            </a>
+                            <form id="logout-form" action="https://maancomplaint.com/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="iiU0nziP2KrzECSx2Wws7KkRDAxeWpQhKM5cXrqF">                            </form>
+                        </li>
+                    </ul>
+                </li>
               </div>
           </div>
         </div>
@@ -84,10 +105,42 @@
         <!--  عنوان الصفحة-->
         <div class="row mt-5">
         </div>
-        <div class="row mt-5">
-          <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">طلب على الشاغر</h1>
+        <div class="row mt-5 mb-5">
+          <h1 class="col wow bounceIn" style="text-align:center;color:#288CF0;">طلبات ع الشاغر</h1>
         </div>
       <!--  بداية محتوى الصفحة-->
+      <div class="row">
+        <div class="col-sm-1">
+          <label for="">بحث عن </label>
+        </div>
+        <div class="col">
+          <input style="width:300px;height:40px;" type="search" name="" value="" placeholder="الاسم">
+        </div>
+        <div class="col-sm-1">
+          <label for="">فرز حسب </label>
+        </div>
+        <div class="col">
+          <select class="col wow bounceInUp rounded" style="height:40px;width:200px">
+              <option selected>المحافظة  </option>
+              <option value="1">غزة</option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+         </select>
+        </div>
+        <div class="col">
+          <select class="col wow bounceInUp rounded" style="height:40px;width:200px">
+              <option selected>المنطقة السكنية  </option>
+              <option value="1">غزة</option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+         </select>
+        </div>
+        <div class="col">
+          <button style="width:150px;height:40px;" type="submit" class="btn btn-info wow bounceInUp ">بحث</button>
+        </div>
+      </div>
         <div class="row mt-5 ">
           <table  class="table table-bordered wow bounceIn" >
             <thead >
@@ -190,7 +243,6 @@
        <script src="lib/js/wow.min.js"></script>
 
        <script> new WOW().init(); </script>
-       <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
        <script type="text/javascript">
        $(document).ready(function(){
            $('.navbar-xbootstrap').click(function(){
@@ -202,8 +254,6 @@
        </script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-       <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    </body>
 
    </html>
